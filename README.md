@@ -2,11 +2,20 @@
 This code accurately predicts the time and location(lat|lon) of finding a satellite exactly between the viewer and the sun.  We can find satellite's attitude(orientation) from its  silhouette formed behind the bright sun.
 
 
+Few terms:
+TLE (Two Line Elements): set of parameters which defines projected path/trajectory of a freely orbiting body. TLEs are short lived in case of LEO satellites.  
+More explanation in https://github.com/kalyan0510/Sun-and-Satellite-transit-predict/blob/master/Solar%20Transit%20Predection%20for%20Orientation%20detection.pptx
+
+Live updated TLEs of International Space station [Zarya] are maintained here: https://live.ariss.org/iss.txt
+
+
+
 
 ## Usage
-1. run SatelliteTransitDataGenerator.m to generate the transit path.
-2. satellite_shadow_data.csv will contain time, latitude & longitude
-3. This file can be directly uploaded at https://www.google.com/maps to generate path 
+1. Update the two line element in pathfinder.m
+2. run SatelliteTransitDataGenerator.m to generate the transit path.
+3. satellite_shadow_data.csv will contain time, latitude & longitude
+4. This file can be directly uploaded at https://www.google.com/maps to generate path 
 
 
 <img src="Picture1.png" width="400">
