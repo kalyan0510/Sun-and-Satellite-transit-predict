@@ -1,6 +1,7 @@
 # Sun-and-Satellite-transit-predict
 This code accurately predicts the time and location(lat|lon) of finding a satellite exactly between the viewer and the sun.  We can find satellite's attitude(orientation) from its  silhouette formed behind the bright sun.
 
+(checkout how u can rescue a failing satellite with this code: https://kalyan0510.github.io/posts/satrescue.html)
 
 Few terms:
 TLE (Two Line Elements): set of parameters which defines projected path/trajectory of a freely orbiting body. TLEs are short lived in case of LEO satellites.  
