@@ -3,7 +3,7 @@ function [ t ] = julian2UTC( jdate )
 %   Detailed explanation goes here
 t = datetime(jdate,'convertfrom','juliandate');
 t.TimeZone = '+00:00';
-t.TimeZone = '-05:30';
+%t.TimeZone = '-05:30'; enable this line to convert the time to custom time zones
 t = datevec(t);
 end
 
